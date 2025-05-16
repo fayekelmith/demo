@@ -102,7 +102,12 @@ func initChi() *chi.Mux {
 		AllowCredentials: true,
 		MaxAge:           300,
 	})
+	hello()	
 	r.Use(cors.Handler)
 	r.Use(middleware.Timeout(60 * time.Second))
 	return r
+}
+
+func hello() {
+	fmt.Println("Hello, World!")
 }
