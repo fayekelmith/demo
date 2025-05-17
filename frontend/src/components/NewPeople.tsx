@@ -4,6 +4,7 @@ import * as api from "../api";
 
 let name = "NewPeople";
 let name2 = "People";
+let name3 = "Person";
 
 export default function NewPeople() {
   const [people, setPeople] = useState<Person[]>([]);
