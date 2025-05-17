@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { Person } from "./Person";
 import * as api from "../api";
 
+let name = "NewPeople";
+
 export default function NewPeople() {
   const [people, setPeople] = useState<Person[]>([]);
 
