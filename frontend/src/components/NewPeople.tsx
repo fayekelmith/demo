@@ -3,6 +3,7 @@ import { Person } from "./Person";
 import * as api from "../api";
 
 let name = "NewPeople";
+let name2 = "People";
 
 export default function NewPeople() {
   const [people, setPeople] = useState<Person[]>([]);
