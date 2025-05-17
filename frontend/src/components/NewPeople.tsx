@@ -6,6 +6,7 @@ let name = "NewPeople";
 let name2 = "People";
 let name3 = "Person";
 let name4 = "api";
+let name5 = "useEffect";
 
 export default function NewPeople() {
   const [people, setPeople] = useState<Person[]>([]);
