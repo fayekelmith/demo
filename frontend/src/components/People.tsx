@@ -1,6 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Person } from './Person';
-import * as api from '../api';
+import { useEffect, useState } from "react";
+import { Person } from "./Person";
+import * as api from "../api";
+
+let name = "People";
 
 function People() {
   const [people, setPeople] = useState<Person[]>([]);
@@ -10,7 +12,7 @@ function People() {
     fetch(`${api.host}/people`)
       .then((response) => response.json())
       .then((data: Person[]) => setPeople(data))
-      .catch((error) => console.error('Error fetching people:', error));
+      .catch((error) => console.error("Error fetching people:", error));
   }, []);
 
   return (
