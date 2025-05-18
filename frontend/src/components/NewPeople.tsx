@@ -33,10 +33,3 @@ export default function NewPeople() {
     </div>
   );
 }
-
-const person = new Person(1, "John Doe", "johndoe@mail.com");
-console.log(person.toJson());
-
-export function getName() {
-  return person.name;
-}
